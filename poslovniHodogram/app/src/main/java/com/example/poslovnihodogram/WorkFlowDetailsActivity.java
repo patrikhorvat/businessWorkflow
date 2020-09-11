@@ -69,6 +69,7 @@ public class WorkFlowDetailsActivity extends AppCompatActivity {
     private void handleResponse(WorkFlow body) {
         progressBar.setVisibility(View.GONE);
         if(body!=null){
+
             id.setText(String.valueOf(body.getId()));
             title.setText(body.getTitle());
             description.setText(body.getDescription());
